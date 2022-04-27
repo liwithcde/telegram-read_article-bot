@@ -64,7 +64,7 @@ def next(update: Update, context: CallbackContext):
 
 
 def main() -> None:
-    updater = Updater('5260554987:AAGbD2S8H81wzD-QQWavGUO_tEQdDszcU3k')
+    updater = Updater('<Shoud be BOT TOKEN　HERE>')
 
     updater.dispatcher.add_handler(CommandHandler('help', help))
     updater.dispatcher.add_handler(CommandHandler('start', start))
