@@ -86,7 +86,7 @@ def save(update: Update, context: CallbackContext) -> None:
 def bot_restart():
     '''机器人重新开机'''
     for file in glob.glob('user_data/*.dat'):
-        user_id = int(file.split('\\')[1].split('.')[0])
+        user_id = int(file.split('/')[1].split('.')[0])
         with open(file,'rt',encoding = 'utf8') as f:
             user_pos[user_id] = int(f.read())
 
